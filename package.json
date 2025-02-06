@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "eslint": "eslint 'src/**/*.js' 'src/**/*.jsx'"

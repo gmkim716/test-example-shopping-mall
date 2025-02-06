@@ -24,13 +24,16 @@ export default function TextField({
     setValue(ev.target.value);
     onChange?.(ev.target.value);
   };
+
   const focus = () => {
     setFocused(true);
     onFocus?.();
   };
+
   const blur = () => {
     setFocused(false);
   };
+
   const pressEnter = ev => {
     if (ev.key === 'Enter' && !ev.nativeEvent.isComposing) {
       ev.preventDefault();
