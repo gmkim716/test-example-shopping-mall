@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export const ErrorPage = () => {
   const navigate = useNavigate();
   const handleClickBackButton = () => {
-    navigate(-1);
+    navigate(-1); // 에러 페이지에서 뒤로가기 버튼을 클릭하면 navigate(-1) 함수가 호출되어야 한다
   };
 
   return (
