@@ -41,6 +41,9 @@ const calculateTotal = cart =>
     { totalCount: 0, totalPrice: 0 },
   );
 
+// Info. 장바구니 정보는 로그인한 사용자와 매핑한다
+// Info. 앱 전반적으로 필요한 데이터이기 때문에 zustand를 이용한 상태 관리가 필요합니다
+// Info. 편의상 로컬 스토리지를 사용해서 장바구니 상품을 저장합니다
 export const useCartStore = create(set => ({
   cart: {},
   totalCount: 0,
