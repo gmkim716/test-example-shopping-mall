@@ -48,7 +48,9 @@ export const useCartStore = create(set => ({
   cart: {},
   totalCount: 0,
   totalPrice: 0,
-  initCart: userId =>
+  initCart: (
+    userId, // userId라는 배개변수를 사용
+  ) =>
     set(state => {
       if (!userId) {
         return state;
